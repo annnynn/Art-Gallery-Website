@@ -1,0 +1,21 @@
+:root {
+    /*colors*/
+    --clr-gold: hsla(24, 56%, 63%, 1);
+    --clr--black: hsla(0, 0%, 8%, 1);
+    --clr-dark-gray: hsla(0, 0%, 27%, 1);
+    --clr-white: hsla(0, 0%, 100%, 1);
+    /*font-size body*/
+    --body-fs-s: 18px;
+    --body-fs-m: 22px;
+    /*font-size heading*/
+    --fs-h-s: 36px;
+    --fs-h-m: 60px;
+    --fs-h-l: 70px;
+    --fs-h-xl: 96px;
+    /*font-weight*/
+    --fw-body: 300;
+    --fw-h: 900;
+    /*fs,fw Button*/
+    --fs-button: 20px;
+    --fw-button: 800;
+}
