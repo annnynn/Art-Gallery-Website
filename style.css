@@ -152,7 +152,7 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 10px;
+    margin-left: 16px;
 }
 
 .text-1 {
