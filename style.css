@@ -30,11 +30,9 @@
 }
 
 body {
-    display: flex;
     flex-direction: column;
     font-family: var(--ff-heading);
     background: var(--clr-white);
-    height: 100vh;
 }
 
 img {
@@ -157,25 +155,26 @@ header .white-div img {
 }
 
 .art-gallery {
-    width: 100%;
     margin-top: 180px;
 }
 
 .art-gallery .container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-right: 165px;
-    margin-left: 165px;
-    max-width: 1100px;
 }
 
 .top-section {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    max-width: 1110px;
 }
 
 .bottom-section {
     display: flex;
+    justify-content: center;
     margin-top: 30px;
 }
 
@@ -194,8 +193,8 @@ header .white-div img {
 .text-2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 377px;
     max-width: 445px;
     width: 100%;
@@ -211,18 +210,15 @@ header .white-div img {
 }
 
 .text-2 h2 {
-    height: 120px;
-    width: 350px;
     font-size: 60px;
     font-weight: 900;
     line-height: 60px;
     letter-spacing: 0px;
     color: var(--clr-white);
+    width: 350px;
 }
 
 .text-1 p {
-    height: 128px;
-    width: 350px;
     font-size: 22px;
     font-weight: 300;
     line-height: 32px;
@@ -230,51 +226,48 @@ header .white-div img {
 }
 
 .text-2 p {
-    height: 96px;
-    width: 350px;
     font-size: 22px;
     font-weight: 300;
     line-height: 32px;
     color: var(--clr-white);
     padding-top: 32px;
+    width: 350px;
 }
 
 .img-1 {
-    max-width: 635px;
     height: 400px;
+    max-width: 635px;
+    min-width: 398px;
 }
 
 .img-2 {
     height: 720px;
     max-width: 635px;
+    min-width: 398px;
 }
 
 .img-3 {
     height: 313px;
     max-width: 445px;
+    min-width: 280px;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 350px;
     background: var(--clr--black);
-    height: 344px;
+    height: 244px;
+    width: 1440px;
     width: 100%;
 }
 
 footer .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    max-width: 1440px;
     height: 100%;
     width: 100%;
-    margin-left: 165px;
-    margin-right: 165px;
-    height: 244px;
 }
 
 footer p {
