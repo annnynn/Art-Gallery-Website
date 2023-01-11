@@ -1,8 +1,5 @@
-.div-container .left-black-div {
-    display: none;
-}
-
-.div-container .img-div {
-    height: 700px;
-    width: 437px;
+@media only screen and(min-width:768px) {
+    header .black-div {
+        display: none;
+    }
 }
