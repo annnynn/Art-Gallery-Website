@@ -258,7 +258,7 @@ footer {
     margin-top: 350px;
     background: var(--clr--black);
     height: 244px;
-    width: 1440px;
+    max-width: 1440px;
     width: 100%;
 }
 
