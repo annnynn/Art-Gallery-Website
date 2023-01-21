@@ -63,7 +63,8 @@ button {
 
 .gallery {
     display: flex;
-    flex-direction: column;
+    border: 2px solid red;
+    flex-wrap: wrap;
     padding: 0 16px 120px 16px;
 }
 
