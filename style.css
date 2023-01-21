@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black-bg-color: hsla(0, 0%, 8%, 1);
+}
+
+body {
+    height: 100vh;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p {
+    font-family: "Outfit";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header,
+img {
+    width: 100%;
+}
+
+header h1 {
+    font-size: 60px;
+    line-height: 55px;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px 120px 16px;
+}
+
+.overlay p {
+    margin: 32px 0px 32px 0px;
+}
+
+button {
+    max-width: 260px;
+    height: 72px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px 120px 16px;
+}
+
+.gallery .img-1 {
+    height: 320px;
+    width: 343px;
+}
+
+article {
+    padding-right: 16px;
+    margin-top: 25px;
+}
+
+article h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 45px;
+}
+
+article p {
+    padding-top: 21px;
+    padding-bottom: 32px;
+    line-height: 28px;
+}
+
+.white-box {
+    height: 223px;
+    width: 343px;
+}
+
+.black-box {
+    height: 293px;
+    width: 343px;
+    background: var(--black-bg-color);
+    color: white;
+    padding: 48px 0px 0px 24px;
+}
+
+.gallery .img-2 {
+    height: 480px;
+    width: 343px;
+    margin-top: 16px
+}
+
+.gallery .img-3 {
+    height: 200px;
+    width: 343px;
+    margin-top: 16px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+    background: var(--black-bg-color);
+    color: white;
+}
+
+footer h2 {
+    padding-top: 48px;
+    font-size: 25px;
+}
+
+footer p {
+    padding-top: 38px;
+}
+
+footer img {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+ul {
+    display: flex;
+    margin-top: 38px;
+    padding-bottom: 48px;
+}
+
+footer .insta {
+    margin-left: 20px;
+    margin-right: 20px;
+}
