@@ -1,0 +1,81 @@
+@media screen and (min-width:768px) {
+    header,
+    img {
+        height: 700px;
+        width: 437px;
+    }
+    header {
+        position: relative;
+    }
+    .overlay {
+        position: absolute;
+        top: 145px;
+        left: 389px;
+        padding: 32px 16px 120px 16px;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: auto 500px;
+        grid-template-rows: auto;
+        padding: 20px;
+    }
+    .white-box {
+        height: 223px;
+        width: 343px;
+        margin-left: 11px;
+    }
+    .gallery .img-1 {
+        height: 400px;
+        width: 398px;
+    }
+    .gallery .img-2 {
+        height: 720px;
+        width: 398px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .gallery .img-3 {
+        height: 313px;
+        width: 280px;
+        margin-left: 11px;
+    }
+    .collage {
+        display: flex;
+    }
+    .black-box {
+        height: 396px;
+        width: 280px;
+        padding: 85px 28px 85px 29px;
+    }
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-top: 56px;
+        padding-bottom: 56px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background: var(--black-bg-color);
+        color: white;
+        width: 100%;
+    }
+    footer h2 {
+        padding-top: 56px;
+    }
+    footer p {
+        padding-top: 56px;
+        padding-left: 65px;
+        width: 70%;
+    }
+    ul {
+        display: flex;
+        padding-top: 56px;
+        padding-right: 40px;
+        padding-left: 133px;
+    }
+    footer .twitter {
+        margin-left: 20px;
+    }
+    footer .facebook {
+        margin-right: 20px;
+    }
+}

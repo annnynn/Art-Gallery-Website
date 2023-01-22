@@ -9,7 +9,6 @@
 }
 
 body {
-    height: 100vh;
     font-family: 'Big Shoulders Display', cursive;
 }
 
@@ -26,6 +25,7 @@ h1 {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 li {
@@ -62,10 +62,8 @@ button {
 }
 
 .gallery {
-    display: flex;
-    border: 2px solid red;
-    flex-wrap: wrap;
-    padding: 0 16px 120px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .gallery .img-1 {
@@ -119,6 +117,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     padding-left: 32px;
+    padding-right: 32px;
     background: var(--black-bg-color);
     color: white;
 }
@@ -135,16 +134,20 @@ footer p {
 footer img {
     width: 20px;
     height: 20px;
-    background-color: black;
 }
 
 ul {
     display: flex;
-    margin-top: 38px;
+    padding-top: 38px;
     padding-bottom: 48px;
 }
 
 footer .insta {
     margin-left: 20px;
     margin-right: 20px;
+}
+
+button {
+    background-color: var(--black-bg-color);
+    border: 0;
 }
