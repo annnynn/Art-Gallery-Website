@@ -9,7 +9,16 @@
 }
 
 body {
+    max-width: 1444px;
     font-family: 'Big Shoulders Display', cursive;
+    max-height: 100vh;
+}
+
+.body-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
@@ -31,7 +40,6 @@ a {
 li {
     list-style: none;
 }
-
 
 
 header,
@@ -67,61 +75,8 @@ button {
     height: 72px;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows:320px 250px 480px 200px 293px;
-    padding-left: 16px;
-    padding-right: 16px;
-
-
-}
-
-.gallery-item{
-    margin-top: 16px;
- 
-}
-
-.gallery-item-1{
-   grid-column: 1;
-   grid-row: 1;
-
-}
-
-.gallery-item-2{
-    grid-column: 1;
-    grid-row: 2;
-   
-}
-
-.gallery-item-3{
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.gallery-item-4{
-   grid-column: 1;
-   grid-row:4;
-    
-}
-
-.gallery-item-5{
-    grid-column: 1;
-    grid-row: 5;
-    background: var(--black-bg-color);
-    color: white;
-   padding-top: 48px;
-    padding-left: 24px;
-    padding-right: 24px;
-}
-
-.gallery-image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
- .gallery h1 {
+/*MOBILE*/
+.gallery h1 {
     font-size: 50px;
     text-transform: uppercase;
     line-height: 45px;
@@ -133,60 +88,101 @@ button {
     line-height: 28px;
 }
 
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 32px;
-    padding-right: 32px;
+.gallery {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 320px 293px 480px 200px 293px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.gallery-img-1{
+   grid-column: 1;
+   grid-row: 1;
+}
+
+.white-box{
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 25px;
+}
+
+.gallery-img-2{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.gallery-img-3{
+   grid-column: 1;
+   grid-row:4;
+   margin-top: 16px; /*need to fix*/
+    
+}
+
+.black-box{
+    grid-column: 1;
+    grid-row: 5;
     background: var(--black-bg-color);
     color: white;
-    margin-top: 120px;
+    margin-top: 16px; /*need to fix*/
 }
 
-footer h2 {
-    padding-top: 48px;
-    font-size: 25px;
-}
+/*F O O T E R*/ /*F O O T E R*/ /*F O O T E R*/
 
-footer p {
-    padding-top: 38px;
-}
-
-footer img {
-    width: 20px;
-    height: 20px;
-}
-
-ul {
-    display: flex;
-    padding-top: 38px;
-    padding-bottom: 48px;
-}
-
-footer .insta {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-button {
+footer {
     background-color: var(--black-bg-color);
-    border: 0;
-}
+    color: white;
+    margin-top: 120px;    
+    width: 100%;
+ }
+ 
+ .flex-footer{
+  max-width: 1440px;
+  padding: 48px 32px 48px 32px;
+ }
+ 
+ .footer-row{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ 
+ 
+ .footer-col h2{
+   width:120px;
+   font-size: 25px;
+ }
+ 
+ .footer-col p {
+     min-width: 311px;
+     font-size: 16px;
+     padding:38px 0px 38px 0px;
+ }
+ 
+ .footer-col .icon {
+     width: 20px;
+     height: 20px;
+ }
+ 
+ ul {
+     display: flex; 
+ }
+ 
+ footer .insta {
+     margin-left: 20px;
+     margin-right: 20px;
+ }
 
 
+/* Tablet */ /* Tablet */ /* Tablet */ /* Tablet */
 @media screen and (min-width: 768px){
 
     header{
         position: relative;
     }
 
-    .mobile-hero{
+    .mobile-hero, .dekstop-hero{
       display: none;
         
-    }
-
-    .dekstop-hero{
-        display: none;
     }
 
     .tablet-hero{
@@ -201,37 +197,46 @@ button {
     }
     .gallery {
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows:320px 250px 480px;
+        grid-template-columns: 398px 280px;
+        grid-template-rows:400px 313px 396px;
         padding-left: 16px;
         padding-right: 16px;
         margin-top: 120px;
         gap: 11px;
+      
     }
     
-    .gallery-item-1{
+    .gallery-img-1{
        grid-column: 1;
-       grid-row: 1;
-    
+       grid-row: 1; 
+       width: 398px;
+    height: 400px;
     }
     
-    .gallery-item-2{
+    .white-box{
         grid-column: 2;
-        grid-row: 1;
+        grid-row:1;
+        width: 223px;
+        height: 135px;
     }
     
-    .gallery-item-3{
+    .gallery-img-2{
         grid-column: 1;
-        grid-row: 2 / span 2;
+        grid-row: 2;
+        width: 398px;
+        height: 720px;
     }
     
-    .gallery-item-4{
+    .gallery-img-3{
        grid-column: 2;
        grid-row:2;
+       width: 280px;
+       height: 313px;
+       margin-top: 0;
         
     }
     
-    .gallery-item-5{
+    .black-box{
         grid-column: 2;
         grid-row: 3;
         background: var(--black-bg-color);
@@ -239,29 +244,82 @@ button {
         padding-top: 48px;
         padding-left: 24px;
         padding-right: 24px;
+        margin-top: 0;
     }
+  
+    .flex-footer{
+        max-width: 1440px;
+        padding: 56px 40px 56px 39px;
+       }
 
+       .footer-col h2{
+        width: 110px;
+       }
+
+       .footer-col p{
+        width: 281px;
+        padding-top: 0;
+       }
+
+       .footer-row{
+        display: flex;
+        justify-content: space-between;
+       }
 }
 
+
+/*DEKSTOP*/ /*DEKSTOP*/ /*DEKSTOP*/ /*DEKSTOP*/
 
 @media screen and (min-width: 1444px){
 
 
+    header h1{
+        font-size: 96px;
+        font-weight: 900;
+        line-height: 88px;
+        width: 514px;
+    }
+
+    header p{
+        width: 350px;
+        color: #444444;
+        font-size: 22px;
+    }
+
+    header .dekstop-hero{
+        display:flex;
+        width: 540px;
+        height:800px;
+        object-fit: cover;
+    }
+
 .overlay{
     left: 165px;
-    top: 189px;
+    top: 190px;
     color: white;
+    flex-direction: row;
 }
-    .dekstop-hero{
-        display: flex;
-        width: 35%;
-        object-fit: cover;
-       
-    }
+
+.overlay p{
+    margin: 0;
+ 
+}
+
+.flex-text{
+    margin-left: 246px;
+}
+
+
+.button{
+width: 204px;
+border-radius: 0px;
+border: 2px solid red;
+background-color: var(--black-bg-color);
+}
 
     .black-div{
         width: 450px;
-        height: 1300px;
+        height: 800px;
         background-color: var(--black-bg-color);
     }
 
@@ -269,18 +327,13 @@ button {
         display: flex;
     }
 
-    .mobile-hero{
+    .mobile-hero, .tablet-hero{
         display: none;
 
     }
-    .tablet-hero{
-        display: none;
-    }
-
         .gallery {
             display: grid;
             grid-template-columns: 50% 50%;
-            grid-template-rows:320px 250px 480px 200px 293px;
             padding-left: 165px;
             padding-right: 164px;
             margin-top: 120px;
@@ -288,48 +341,81 @@ button {
         }
 
         
-        .gallery-item-1{
+        .gallery-img-1{
            grid-column: 1;
            grid-row: 1;
-           order: 2;
+           width: 635px;
+           height: 400px;
         
         }
-        
-        .gallery-item-2{
-            order: 1;
+        .white-box{
+            height: 377px;
+            width: 445px;   
             grid-column: 2;
             grid-row: 1;
+            margin-left: 125px;
+        }
+
+        .white-box p {
+            height: 128px;
+            width: 350px;
         }
         
-        .gallery-item-3{
+        .gallery-img-2{
             grid-column: 1;
-            grid-row: 2 / span 2;
+            grid-row: 2;
+            width: 635px;
+            height: 720px;
+            margin-top: 30px; /*need to fix*/
         }
         
-        .gallery-item-4{
+        .gallery-img-3{
            grid-column: 2;
            grid-row:2;
-            
+           height: 313px;
+           width: 445px;
+           margin-left: 30px;
         }
         
-        .gallery-item-5{
+        .black-box{
             grid-column: 2;
             grid-row: 3;
             background: var(--black-bg-color);
             color: white;
-            padding-top: 48px;
-            padding-left: 24px;
-            padding-right: 24px;
+            padding-top: 65px;
+            padding-left: 48px;
+            padding-right: 47px;
+            padding-bottom: 64px;
+            height: 377px;
+            width: 445px;
+            margin-left: 30px;
+            margin-top: 30px; /*need to fix*/
         }
-    
-    
+
         footer{
             display: flex;
-            border: 2px solid red;
-            margin-top: 120px;
-            padding-left: 165px;
-            padding-right: 165px;
+            margin-top: 180px;
         }
+
+        .flex-footer{
+            max-width: 1440px;
+            padding: 80px 165px 106px 165px;
+           }
+
+           .footer-col p{
+            height: 84px;
+             width: 430px;
+             margin-left: 120px;
+           }
+
+           .footer-row{
+            display: flex;
+            justify-content: space-around;
+           }
+
+           .footer-col h2{
+            width: 160px;
+           }
 
     .icons{
         padding-left: 280px;
