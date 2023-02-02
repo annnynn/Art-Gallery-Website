@@ -133,12 +133,12 @@ footer {
     background-color: var(--black-bg-color);
     color: white;
     margin-top: 120px;    
-    width: 100%;
+    width: 100vw;
  }
  
  .flex-footer{
-  max-width: 1440px;
   padding: 48px 32px 48px 32px;
+  width: 100vw;
  }
  
  .footer-row{
@@ -248,7 +248,6 @@ footer {
     }
   
     .flex-footer{
-        max-width: 1440px;
         padding: 56px 40px 56px 39px;
        }
 
@@ -398,7 +397,6 @@ background-color: var(--black-bg-color);
         }
 
         .flex-footer{
-            max-width: 1440px;
             padding: 80px 165px 106px 165px;
            }
 
