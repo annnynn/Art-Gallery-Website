@@ -16,6 +16,7 @@ body{
 
 iframe{
     width: 100%;
+    filter: grayscale(100%);
 }
 
 a{
@@ -43,6 +44,7 @@ color:white;
   background-color: hsla(0, 0%, 8%, 1);
   color: white;
   padding: 48px 16px 56px 16px;
+  margin-top: -10px;
 }
 
 .article-section h1{

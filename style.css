@@ -70,9 +70,31 @@ header h1 {
     margin: 32px 0px 32px 0px;
 }
 
-button {
-    max-width: 260px;
+.button {
+    line-height: 72px;
+    width: 204px;  
+    text-align: center;  
+}
+
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 72px;
+    width: 56px;   
+    background-color: #D5966C;
+}
+
+.arrow img{ 
+    object-fit: none;
+}
+
+.button-a{
+    display: flex;
+}
+
+.button{
+    background-color: black;
 }
 
 /*MOBILE*/
@@ -172,6 +194,10 @@ footer {
      margin-right: 20px;
  }
 
+ .icons li{
+    filter: invert(6%) sepia(4%) saturate(7%) hue-rotate(32deg) brightness(103%) contrast(95%);
+}
+
 
 /* Tablet */ /* Tablet */ /* Tablet */ /* Tablet */
 @media screen and (min-width: 768px){
@@ -185,8 +211,8 @@ footer {
         
     }
 
-    .tablet-hero{
-        display: flex;
+     .tablet-hero{
+    display: flex;
      width: 55%;
     }
 
@@ -270,7 +296,6 @@ footer {
 /*DEKSTOP*/ /*DEKSTOP*/ /*DEKSTOP*/ /*DEKSTOP*/
 
 @media screen and (min-width: 1444px){
-
 
     header h1{
         font-size: 96px;
@@ -417,5 +442,6 @@ background-color: var(--black-bg-color);
 
     .icons{
         padding-left: 280px;
+        
     }
 }
