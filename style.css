@@ -59,7 +59,7 @@ header h1 {
 .overlay {
     display: flex;
     flex-direction: column;
-    padding: 32px 16px 120px 16px;
+    padding: 32px 16px 104px 16px;
 }
 
 .overlay p {
@@ -87,6 +87,7 @@ header h1 {
 
 .button-a{
     display: flex;
+    margin-top: 0;
 }
 
 .button{
@@ -225,6 +226,8 @@ footer {
         top:145px;
         left: 383px;
     }
+
+
     .gallery {
         display: grid;
         grid-template-columns: 398px 280px;
@@ -333,10 +336,8 @@ footer {
     color: white;
     flex-direction: row;
 }
-
 .overlay p{
     margin: 0;
- 
 }
 
 .flex-text{
@@ -348,6 +349,11 @@ footer {
 width: 204px;
 border-radius: 0px;
 background-color: var(--black-bg-color);
+}
+
+.button-a{
+    display: flex;
+    padding-top: 64px;
 }
 
     .black-div{
