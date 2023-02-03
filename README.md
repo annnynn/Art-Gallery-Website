@@ -1,19 +1,19 @@
 # Art-Gallery-Website
 
 #overview
-I created responsive Art Gallery using mediaquery
-you can fit it on mobile, tablet and dekstop device perfectly
+1. I created responsive Art Gallery using mediaquery
+2. you can fit it on mobile, tablet and dekstop device perfectly
 
 #built-with
-Flebox
-Grid
-Mobile-First Workflow
+1. Flebox
+2. Grid
+3. Mobile-First Workflow
 
 #what i improved
- using grid
- using flebox
- work with mediaqueries
- work with images
+ 1. using grid
+ 2. using flebox
+ 3. work with mediaqueries
+ 4. work with images
 
 #useful resources 
 1. https://cssgridgarden.com/
