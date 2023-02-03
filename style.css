@@ -47,11 +47,7 @@ img {
     width: 100%;
 }
 
-.dekstop-hero{
-    display: none;
-}
-
-.tablet-hero{
+.dekstop-hero, .tablet-hero{
     display: none;
 }
 
@@ -302,6 +298,10 @@ footer {
         font-weight: 900;
         line-height: 88px;
         width: 514px;
+        font-weight: 900;
+        z-index: 1;
+        color: white;
+        mix-blend-mode: difference;
     }
 
     header p{
@@ -337,7 +337,6 @@ footer {
 .button{
 width: 204px;
 border-radius: 0px;
-border: 2px solid red;
 background-color: var(--black-bg-color);
 }
 
