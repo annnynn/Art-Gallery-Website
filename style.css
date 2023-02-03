@@ -112,29 +112,35 @@ header h1 {
     grid-template-rows: 320px 293px 480px 200px 293px;
     padding-left: 16px;
     padding-right: 16px;
+    gap: 16px;
 }
 
 .gallery-img-1{
    grid-column: 1;
    grid-row: 1;
+   height: 320px;
+   width: 343px;
 }
 
 .white-box{
     grid-column: 1;
     grid-row: 2;
-    margin-top: 25px;
+    height: 293px;
+    width: 343px;
 }
 
 .gallery-img-2{
     grid-column: 1;
     grid-row: 3;
+    height: 480px;
+    width: 343px;
 }
 
 .gallery-img-3{
    grid-column: 1;
    grid-row:4;
-   margin-top: 16px; /*need to fix*/
-    
+   height: 200px;
+   width: 343px;    
 }
 
 .black-box{
@@ -142,7 +148,9 @@ header h1 {
     grid-row: 5;
     background: var(--black-bg-color);
     color: white;
-    margin-top: 16px; /*need to fix*/
+    padding: 48px 24px 47px 24px;
+    height: 293px;
+    width: 343px;
 }
 
 /*F O O T E R*/ /*F O O T E R*/ /*F O O T E R*/
